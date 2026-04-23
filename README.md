@@ -60,6 +60,7 @@ queue_id = "QUEUE_OCID"
 ### Supported Services
 
 - Queue
+- Object Storage
 
 ## Documentation
 

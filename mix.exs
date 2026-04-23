@@ -64,6 +64,10 @@ defmodule ExOciSdk.MixProject do
         ExOciSdk.Queue.QueueClient,
         ExOciSdk.Queue.QueueAdminClient,
         ExOciSdk.Queue.Types
+      ],
+      "Object Storage": [
+        ExOciSdk.ObjectStorage.ObjectStorageClient,
+        ExOciSdk.ObjectStorage.Types
       ]
     ]
   end
@@ -76,14 +80,16 @@ defmodule ExOciSdk.MixProject do
       "guides/configuration_and_client/config.md",
       "guides/configuration_and_client/client.md",
       "guides/queue/queue_client.md",
-      "guides/queue/queue_admin_client.md"
+      "guides/queue/queue_admin_client.md",
+      "guides/object_storage/object_storage_client.md"
     ]
   end
 
   defp groups_for_extras do
     [
       "Configuration & Base Client": ~r/guides\/configuration_and_client\/.?/,
-      Queue: ~r/guides\/queue\/.?/
+      Queue: ~r/guides\/queue\/.?/,
+      "Object Storage": ~r/guides\/object_storage\/.?/
     ]
   end
 
